@@ -24,7 +24,7 @@
             @foreach ( $beers as $beer )
                 <tr>
                     <th scope="row">{{ $beer->id }}</th>
-                    <td>{{ $beer->name }}</td>
+                    <td><a href="{{ route('beers.show', compact('beer')) }}">{{ $beer->name }}</a></td>
                     <td>{{ $beer->type }}</td>
                     <td>{{ $beer->nation }}</td>
                     <td>{{ $beer->alcohol }}</td>
