@@ -18,6 +18,7 @@
             <th scope="col">Nation</th>
             <th scope="col">Alcohol</th>
             <th scope="col">Image</th>
+            <th scope="col">Action</th>
           </tr>
         </thead>
         <tbody>
@@ -29,6 +30,25 @@
                     <td>{{ $beer->nation }}</td>
                     <td>{{ $beer->alcohol }}</td>
                     <td><img src="{{ $beer->image }}" width="190" height="300" alt=""></td>
+                    <td>
+                        <a href="{{ route('beers.show', compact('beer')) }}">
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-eye"></i>
+                            </button>
+                        </a>
+                        <a href="{{ route('beers.edit', compact('beer')) }}">
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-edit"></i>
+                            </button>
+                        </a>
+                        <form action="{{ route('beers.destroy', compact('beer')) }}" method="post">
+                            @csrf
+                            @method('DELETE')
+
+                            <button type="submit" class="btn btn-danger">
+                                <i class="fas fa-meteor"></i>
+                            </button>
+                    </td>
                 </tr>
             @endforeach
         </tbody>

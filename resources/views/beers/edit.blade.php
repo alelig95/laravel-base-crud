@@ -10,18 +10,7 @@
 </head>
 <body>
 
-    {{-- @if ($errors->any())
-        <div class="alert alert-danger">
-            <ul>
-                @foreach ($errors->all() as $error)
-                    <li>{{ $error }}</li>
-                @endforeach
-            </ul>
-        </div>
-    @endif --}}
-
-    @include('beers.form', ['edit' => false])
-
+    @include('beers.form', ['edit' => true])
 
 </body>
 </html>

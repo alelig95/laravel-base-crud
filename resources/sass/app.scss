@@ -7,7 +7,19 @@
 // Bootstrap
 @import '~bootstrap/scss/bootstrap';
 
+// Fontawesome
+@import '~@fortawesome/fontawesome-free/css/all.min.css';
+
+input{
+    margin-bottom: 45px;
+}
+
 .container{
-    width: 1200px;
-    margin: 0 auto;
+    margin-top: 50px;
+}
+
+button{
+    width: 60px;
+    margin-top: 150px;
+    margin-right: 6px;
 }
