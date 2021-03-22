@@ -93,7 +93,9 @@ class BeerController extends Controller
     protected function validateForm(Request $request)
     {
         $request->validate([
-            'name' => 'required|max:10'
+            'name' => 'required|max:255',
+            'type' => 'required|max:255',
+            'nation' => 'required|max:255'
         ]);
     }
 

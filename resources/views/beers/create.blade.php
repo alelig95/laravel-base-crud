@@ -20,6 +20,8 @@
         </div>
     @endif --}}
 
+    <h1 class="text-center">Create</h1>
+
     @include('beers.form', ['edit' => false])
 
 

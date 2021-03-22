@@ -13,8 +13,12 @@
             <img class="card-img-top" src="{{$beer->image}}" alt="Card image cap">
             <div class="card-body">
             <h5 class="card-title">{{$beer->name}}</h5>
-            <p class="card-text">{{$beer->nation}}</p>
-            <a href="/beers" class="btn btn-primary">Home</a>
+            <p class="card-text">{{$beer->type}}</p>
+            <a href="{{ route('beers.index') }}">
+                <button type="submit" class="btn btn-primary home-button">
+                    <i class="fas fa-home"></i>
+                </button>
+            </a>
             </div>
         </div>
     </div>

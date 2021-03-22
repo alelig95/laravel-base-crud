@@ -10,6 +10,8 @@
 </head>
 <body>
 
+    <h1 class="text-center">Edit</h1>
+
     @include('beers.form', ['edit' => true])
 
 </body>

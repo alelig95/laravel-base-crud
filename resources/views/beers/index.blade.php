@@ -9,6 +9,12 @@
 </head>
 <body>
 
+    <a href="{{ route('beers.create') }}">
+        <button type="submit" class="btn btn-primary create-button">
+            <i class="fas fa-plus"></i>
+        </button>
+    </a>
+
     <table class="table">
         <thead class="thead-dark">
           <tr>
@@ -48,6 +54,8 @@
                             <button type="submit" class="btn btn-danger">
                                 <i class="fas fa-meteor"></i>
                             </button>
+                        </form>
+
                     </td>
                 </tr>
             @endforeach
